@@ -123,7 +123,7 @@ $user = mysqli_fetch_object(mysqli_query($conn, "SELECT * FROM user WHERE id = '
                                             Company:
                                         </label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input value="<?php echo $supervisorInfo->company ?>" type="text" class="form-control col-md-7 col-xs-12" disabled>
+                                            <input value="<?php echo $user->supervisor_id != 0 ? $supervisorInfo->company : "" ?>" type="text" class="form-control col-md-7 col-xs-12" disabled>
                                         </div>
                                     </div>
 
@@ -132,7 +132,7 @@ $user = mysqli_fetch_object(mysqli_query($conn, "SELECT * FROM user WHERE id = '
                                             Supervisor:
                                         </label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input value="<?php echo ucwords("$supervisorInfo->fname $supervisorInfo->lname") ?>" type="text" class="form-control col-md-7 col-xs-12" disabled>
+                                            <input value="<?php echo $user->supervisor_id != 0 ? ucwords("$supervisorInfo->fname $supervisorInfo->lname") : "" ?>" type="text" class="form-control col-md-7 col-xs-12" disabled>
                                         </div>
                                     </div>
 

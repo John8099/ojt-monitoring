@@ -24,6 +24,7 @@ $supervisor_links = array(
     "Scan QR"  => "scan-qr.php",
     "Employees" => "employees.php",
     "Employees Report" => "employees-report.php",
+    "Checked Reports" => "checked-reports.php",
     "DTR Records" => "dtr-records.php",
 
 );
@@ -31,6 +32,7 @@ $supervisor_icons = array(
     "fa fa-user",
     "fa fa-qrcode",
     "fa fa-users",
+    "fa fa-file",
     "fa fa-file-text",
     "fa fa-clipboard",
 );

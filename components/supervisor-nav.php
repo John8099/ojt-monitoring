@@ -39,7 +39,7 @@
                 <li class="">
                     <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="text-transform: capitalize;">
                         <img src="../images/avatar.png" alt="">
-                        <?php echo "$user->fname " . $user->mname[0] . ". $user->lname"; ?>
+                        <?php echo "$user->fname " . $user->mname[0] . ". $user->lname (".ucwords($user->role).")"; ?>
                         <span class=" fa fa-angle-down"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">

@@ -32,6 +32,7 @@ folderFiles("media", listOfFilesUploadedInDb($conn))
             <section class="login_content">
                 <form method="POST" role="form" id="login-form">
                     <h1>Sign In</h1>
+                    <!-- <?= md5("password") ?> -->
                     <div>
                         <input type="email" name="email" class="form-control" placeholder="Email" required="" />
                     </div>
